@@ -1,0 +1,96 @@
+.container {
+  width: 800px;
+  height: 500px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 150px;
+  flex-wrap: wrap;
+  /* border: 1px solid black; */
+  position: relative;
+}
+/* .box-1 {
+  width: 0px;
+  height: 0px;
+  border-top: 50px solid magenta;
+  border-right: 50px solid brown;
+  transform: rotate(45deg);
+}
+.box-2 {
+  width: 0px;
+  height: 0px;
+  border-top: 50px solid firebrick;
+  border-right: 50px solid indianred;
+  transform: rotate(45deg);
+} */
+.box-1 {
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(to bottom left, brown 50%, deeppink 50%);
+  transform: rotate(135deg);
+}
+.box-2 {
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(to bottom left, indianred 50%, brown 50%);
+  transform: rotate(135deg);
+}
+.box-2-1 {
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(to bottom left, coral 50%, mistyrose 50%);
+  transform: rotate(135deg);
+  position: absolute;
+  bottom: 2%;
+  right: 37%;
+  filter: opacity(0.9);
+}
+.box-3 {
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(to bottom left, seagreen 50%, darkgreen 50%);
+  transform: rotate(135deg);
+  position: absolute;
+  top: 25%;
+  left: 35%;
+  filter: opacity(0.9);
+}
+.box-4 {
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(
+    to bottom left,
+    rgb(10, 70, 10) 50%,
+    seagreen 50%
+  );
+  transform: rotate(135deg);
+  position: absolute;
+  top: 45%;
+  right: 30%;
+  filter: opacity(0.9);
+}
+.box-5 {
+  width: 100px;
+  height: 100px;
+  background: #0f620f;
+  filter: opacity(0.9);
+  transform: rotate(45deg);
+  position: absolute;
+  left: 30%;
+  bottom: 25%;
+}
+.box-6 {
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(
+    to bottom left,
+    rgb(7, 78, 101) 50%,
+    rgb(149, 192, 235) 50%
+  );
+  transform: rotate(135deg);
+  position: absolute;
+  top: 35%;
+  right: 40%;
+  filter: opacity(0.9);
+}
