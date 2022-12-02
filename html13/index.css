@@ -1,0 +1,14 @@
+div {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  animation: example 2s linear alternate 2;
+}
+@keyframes example {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(90deg);
+  }
+}
