@@ -11,9 +11,9 @@
 .container-2 {
   width: 800px;
   height: 600px;
-  margin: 50px auto;
+  margin: 20px auto;
   display: flex;
-  gap: 20px;
+  gap: 40px;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
@@ -50,6 +50,7 @@
   height: 200px;
   background-color: rgb(0, 128, 255);
   border-radius: 10px;
+  box-sizing: border-box;
 }
 .box-3:hover {
   width: 100px;
@@ -61,15 +62,159 @@
 .scale,
 .translate-x,
 .translate-y,
-.translate {
-  width: 100px;
+.translate,
+.matrix,
+.rotate,
+.skew,
+.skew-x,
+.skew-y,
+.matrix3d,
+.translate3d,
+.rotateY,
+.rotateX,
+.translate-z {
+  width: 150px;
   height: 100px;
-  background: aqua;
-  border-radius: 10px;
+  background: gray;
+  /* border-radius: 10px; */
 }
-.scale-x:hover {
-  transform: scaleX(1.5);
-  transition: all 2s;
+.scale-xx,
+.scale-yy,
+.scale-1,
+.translate-xx,
+.translate-yy,
+.translate-1,
+.matrix-1,
+.rotate-1,
+.skew-1,
+.skew-xx,
+.skew-yy,
+.matrix3d-1,
+.translate3d-1,
+.rotate-yy,
+.rotate-xx,
+.translate-zz {
+  width: 150px;
+  height: 100px;
   background-color: aqua;
-  filter: opacity(0, 1);
+}
+
+.scale-xx:hover {
+  background-color: aqua;
+  transform: scaleX(1.5);
+  transition: all 1s;
+  filter: opacity(0.3);
+}
+.scale-yy:hover {
+  background-color: aqua;
+  transform: scaleY(1.5);
+  transition: all 1s;
+  filter: opacity(0.3);
+}
+.scale-1:hover {
+  background-color: aqua;
+  transform: scale(1.5);
+  transition: all 1s;
+  filter: opacity(0.3);
+}
+.translate-xx:hover {
+  background-color: aqua;
+  transform: translateX(20px);
+  transition: all 1s;
+  filter: opacity(0.3);
+}
+.translate-yy:hover {
+  background-color: aqua;
+  transform: translateY(20px);
+  transition: all 1s;
+  filter: opacity(0.3);
+}
+.translate-1:hover {
+  background-color: aqua;
+  transform: translateX(20px) translateY(20px);
+  transition: all 1s;
+  filter: opacity(0.3);
+}
+.matrix-1:hover {
+  background-color: aqua;
+  transform: matrix(1, 2, 3, 4, 5, 6);
+  transition: all 1s;
+  filter: opacity(0.3);
+}
+.matrix-1:hover {
+  background-color: aqua;
+  transform: matrix(1, 2, 3, 4, 5, 6);
+  transition: all 1s;
+  filter: opacity(0.3);
+}
+.rotate-1:hover {
+  background-color: aqua;
+  transform: rotate(270deg);
+  transition: all 1s;
+  filter: opacity(0.3);
+}
+.skew-1:hover {
+  background-color: aqua;
+  transform: skew(30deg) skewY(30deg);
+  transition: all 1s;
+  filter: opacity(0.3);
+}
+.skew-xx:hover {
+  background-color: aqua;
+  transform: skewX(30deg);
+  transition: all 1s;
+  filter: opacity(0.3);
+}
+.skew-yy:hover {
+  background-color: aqua;
+  transform: skewY(30deg);
+  transition: all 1s;
+  filter: opacity(0.3);
+}
+.matrix3d-1:hover {
+  background-color: aqua;
+  transform: matrix3d(
+    0.5,
+    0,
+    -0.866025,
+    0,
+    0.595877,
+    1.2,
+    -1.03209,
+    0,
+    0.866025,
+    0,
+    0.5,
+    0,
+    25.9808,
+    0,
+    15,
+    1
+  );
+  transition: all 1s;
+  filter: opacity(0.3);
+}
+.translate3d-1:hover {
+  background-color: aqua;
+  transform: translate3d(20px, 10px, 0px);
+  transition: all 1s;
+  filter: opacity(0.3);
+}
+.rotate-yy:hover {
+  background-color: aqua;
+  transform: rotateY(60deg);
+  transition: all 1s;
+  filter: opacity(0.3);
+}
+.rotate-xx:hover {
+  background-color: aqua;
+  transform: rotateX(60deg);
+  transition: all 1s;
+  filter: opacity(0.3);
+}
+.translate-zz:hover {
+  background-color: aqua;
+  transform: translateZ(60px);
+  transition: all 1s;
+  filter: opacity(0.3);
 }
