@@ -1,0 +1,35 @@
+.container {
+  width: 500px;
+  height: 20vh;
+  background-color: rgb(47, 255, 130);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  margin: 50px auto;
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+  color: yellow;
+  font-size: 40px;
+}
+a:hover {
+  color: #fff;
+  border-bottom: 2px solid #fff;
+}
+a:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: -5px;
+  height: 2px;
+  width: 0%;
+  transition: all 1s ease-in-out;
+  background-color: #fff;
+}
+a:hover:after {
+  left: -5px;
+  width: 120%;
+}

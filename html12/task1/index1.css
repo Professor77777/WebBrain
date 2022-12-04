@@ -214,7 +214,7 @@
 }
 .translate-zz:hover {
   background-color: aqua;
-  transform: translateZ(60px);
+  transform: translateZ(50%);
   transition: all 1s;
   filter: opacity(0.3);
 }
