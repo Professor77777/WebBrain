@@ -5,4 +5,30 @@
 }
 .navbar {
   border: 1px slid black;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+.items {
+  display: flex;
+  gap: 15px;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  background-color: #000;
+  color: #ffff;
+  padding: 5px 10px;
+}
+.nav_right {
+  display: flex;
+  gap: 15px;
+}
+input {
+  width: 20px;
+  border: none;
+}
+select {
+  border: none;
 }
