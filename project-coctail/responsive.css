@@ -1,6 +1,17 @@
 @media (max-width: 840px) {
+  .items {
+    display: flex;
+    gap: 10px;
+  }
+  a {
+    font-size: 10px;
+  }
+  .logo_img {
+    width: 100px;
+    height: 20px;
+  }
 }
-@media (max-width: 500px) {
+@media (max-width: 620px) {
   .item,
   .item_select {
     display: none;
