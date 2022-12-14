@@ -7,11 +7,15 @@
   border: 1px slid black;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 10px 20px;
 }
 .items {
   display: flex;
   gap: 15px;
+}
+.hamburger_btn {
+  display: none;
 }
 a {
   text-decoration: none;
@@ -19,11 +23,14 @@ a {
 a:hover {
   background-color: #000;
   color: #ffff;
-  padding: 5px 10px;
+  /* padding: 5px 20px; */
+  height: fit-content;
 }
 .nav_right {
   display: flex;
   gap: 15px;
+  justify-content: center;
+  align-items: center;
 }
 input {
   width: 20px;
@@ -31,4 +38,17 @@ input {
 }
 select {
   border: none;
+}
+.btn_bag {
+  border: none;
+  background-color: white;
+  width: 30px;
+  height: 30px;
+}
+.btn_bag:active {
+  transform: scale(0.95);
+}
+.bag_img {
+  width: 100%;
+  /* height: 10px; */
 }

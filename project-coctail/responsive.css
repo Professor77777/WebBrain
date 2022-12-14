@@ -1,0 +1,21 @@
+@media (max-width: 840px) {
+}
+@media (max-width: 500px) {
+  .item,
+  .item_select {
+    display: none;
+  }
+  .hamburger_btn {
+    display: block;
+    border: none;
+    background-color: white;
+  }
+  .hamburger_btn:active {
+    transform: scale(0.97);
+  }
+  .select_country,
+  .contact,
+  .login {
+    display: none;
+  }
+}
